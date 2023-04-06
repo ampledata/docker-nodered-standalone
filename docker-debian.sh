@@ -5,8 +5,8 @@ echo "#########################################################################"
 echo "node-red version: ${NODE_RED_VERSION}"
 echo "#########################################################################"
 
-docker build --rm --no-cache \
-    --build-arg ARCH=amd64 \
+docker buildx build --rm --no-cache \
+    --platform linux/amd64,linux/arm64,linux/arm/v7 \
     --build-arg NODE_VERSION=16 \
     --build-arg NODE_RED_VERSION=${NODE_RED_VERSION} \
     --build-arg OS=buster-slim \
