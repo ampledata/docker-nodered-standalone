@@ -1,4 +1,9 @@
-# Build your own Docker image
+# Build a multiplatform stand-alone Node-RED Docker image
+
+Uses buildx.
+
+
+# was:
 
 The docker-custom directory contains files you need to build your own images.
 
